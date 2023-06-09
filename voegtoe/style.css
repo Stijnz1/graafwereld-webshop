@@ -1,0 +1,103 @@
+/* NAVBAR */
+  nav {
+    background-color: rgb(147, 142, 142);
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-bottom: 20px;
+  }
+  .logo a {
+    color: rgb(63, 196, 249);
+    font-size: 32px;
+    text-decoration: none;
+  } 
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding-top: 10px;
+  }
+  .menu li {
+    list-style: none;
+    margin-bottom: 10px;
+  }
+  .menu li a {
+    text-decoration: none;
+    font-size: 18px;
+  }
+  .menu li:last-child a {
+    margin-right: 40px;
+  }
+  .order {
+    color: #fff;
+  }
+  .machines {
+    background-color: rgb(63, 196, 249);
+    color: #fff;
+    padding: 9px;
+    border-radius: 6px;
+  }
+  .terug {
+    margin-left: 26px;
+    color: rgb(63, 196, 249);
+    font-size: large;
+  }
+  .h1 {
+    margin-left: 22px;
+  }
+  label {
+    display: flex;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: left;
+    margin-left: 22px;
+  }
+
+  input, select {
+    padding: 4px;
+    border: 2px solid #ccc;
+    margin-bottom: 20px;
+    margin-left: 22px;
+    font-size: 18px;
+    width: 90%;
+  }
+  select {
+    width: 90.8%;
+  }
+
+  .input {
+    border-radius: 7px;
+  }
+
+  .img {
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    width: 86.4%;
+  }
+
+  .button {
+    height: 32px;
+    margin-left: -5px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    background-color: rgb(63, 196, 249);
+    color: white;
+    border-color: #ccc;
+  }
+
+  .input-met-button {
+    display: flex;
+  }
+  .voegtoe {
+    background-color: rgb(63, 196, 249);
+    border-color: rgb(63, 196, 249);
+    color: white;
+    border-radius: 5px;
+    margin-left: 22px;
+    margin-top: 15px;
+    width: 80px;
+    height: 40px;
+    font-size: medium;
+  }

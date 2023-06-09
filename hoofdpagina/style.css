@@ -1,0 +1,173 @@
+/* NAVBAR */
+nav {
+    background-color: rgb(147, 142, 142);
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  .logo a {
+    color: rgb(63, 196, 249);
+    font-size: 32px;
+    text-decoration: none;
+  } 
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding-top: 10px;
+  }
+  .menu li {
+    list-style: none;
+    margin: 0 10px;
+  }
+  .menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  .menu li:last-child a {
+    padding-right: 40px;
+  }
+  .menu li:last-child .winkelmandje {
+    margin-top: -5px;
+  }
+.winkelmandje {
+    height: 30px;
+    width: 30px;    
+}
+/* BUTTONS */
+ .buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 32px;
+    gap: 15px;
+ }
+.alles {
+    background-color: rgb(63, 196, 249);
+    border-color: rgb(63, 196, 249);
+    color: white;
+    height: 30px;
+    width: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.rups {
+    background-color: rgb(63, 196, 249);
+    border-color: rgb(63, 196, 249);
+    color: white;
+    height: 30px;
+    width: 80px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.mobiel {
+    background-color: rgb(63, 196, 249);
+    border-color: rgb(63, 196, 249);
+    color: white;
+    height: 30px;
+    width: 110px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.shovels {
+    background-color: rgb(63, 196, 249);
+    border-color: rgb(63, 196, 249);
+    color: white;
+    height: 30px;
+    width: 80px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* machines */
+.kranen {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.machine {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 550px;
+  width: 500px;
+  margin: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  position: relative;
+}
+
+.dontShow {
+  display: none !important;
+}
+
+.foto {
+  height: 300px;
+  width: 350px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.button {
+background-color: rgb(63, 196, 249);
+border-color: rgb(63, 196, 249);
+color: white;
+border-radius: 5px;
+padding: 5px;
+cursor: pointer;
+}
+#winkelwagen-aantal {
+  position: absolute;
+  top: 20px;
+  right: 70px;
+  width: 16px;
+  height: 16px;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 16px;
+  display: none;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  bottom: 155px;
+  width: 100%;
+  height: 100%;
+ 
+  
+}
+
+.modal-content {
+  background-color: rgb(147, 142, 142);
+  color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 10px;
+  width: 35%;
+}
+
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}

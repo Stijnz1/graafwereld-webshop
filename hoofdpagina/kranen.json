@@ -1,0 +1,51 @@
+[
+    {
+      "naam": "Hitachi  ZX19-5A CR",
+      "foto": "https://www.traktorpool.nl/media/5547/7075547/43381381/Hitachi+ZX19-5A+CR-43381381.jpg",
+      "prijs": "22500",
+      "bouwjaar": "2018",
+      "voertuig": "rupskranen",
+      "id": 0
+    },
+    {
+        "naam": "DOOSAN DX 50 ",
+        "foto": "https://st.mascus.com/imagetilewm/product/f4f01515/doosan-dx-50,450aff74.jpg",
+        "prijs": "48500",
+        "bouwjaar": "2020",
+        "voertuig": "rupskranen",
+        "id": 1
+    },
+    {
+        "naam": "Ahlmann AZ14t shovel",
+        "foto": "https://www.tractors-and-machinery.nl/media/user/0/2/4/693420_Ahlmann_AZ14t_1.jpeg",
+        "prijs": "18500",
+        "bouwjaar": "2000",
+        "voertuig": "shovels",
+        "id": 2
+    },
+    {
+        "naam": "TAKEUCHI TB295W ",
+        "foto": "https://st.mascus.com/imagetilewm/product/1ebea239/takeuchi-tb295w,efb518ca.jpg",
+        "prijs": "39000",
+        "bouwjaar": "2019",
+        "voertuig": "mobiele kranen",
+        "id": 3
+    },
+    {
+        "naam": "Hitachi ZX140W-3",
+        "foto": "https://www.traktorpool.nl/media/5390/6855390/41737813/Hitachi+ZX140W-3+Mobiele+kraan-41737813.jpg",
+        "prijs": "32950",
+        "bouwjaar": "2008",
+        "voertuig": "mobiele kranen",
+        "id": 4
+    },
+    {
+        "naam": "CAESAR 3510",
+        "foto": "https://st.mascus.com/imagetilewm/product/263cab40/caesar-3510,fa2c7b72.jpg",
+        "prijs": "11950",
+        "bouwjaar": "1993",
+        "voertuig": "mobiele kranen",
+        "id": 5
+    }
+
+]

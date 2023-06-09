@@ -1,0 +1,83 @@
+/* NAVBAR */
+nav {
+    background-color: rgb(147, 142, 142);
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  .logo a {
+    color: rgb(63, 196, 249);
+    font-size: 32px;
+    text-decoration: none;
+  } 
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding-top: 10px;
+  }
+  .menu li {
+    list-style: none;
+    margin: 0 10px;
+  }
+  .menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  .menu li:last-child a {
+    padding-right: 40px;
+  }
+  .menu li:last-child .prullebak {
+    margin-top: -5px;
+  }
+.prullebak {
+    height: 28px;
+    width: 19px;   
+    cursor: pointer; 
+}
+  h1 {
+    text-align: center;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  .afrekenen {
+    background-color: rgb(63, 196, 249);
+    border-color: rgb(63, 196, 249);
+    color: white;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    border-collapse: collapse;
+    cursor: pointer;
+  }
+  .totaal {
+    margin-left: 6px;
+  }
+  #winkelwagen-aantal {
+    position: absolute;
+    top: 20px;
+    right: 70px;
+    width: 16px;
+    height: 16px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 16px;
+    display: none;
+  }

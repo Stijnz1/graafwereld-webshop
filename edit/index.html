@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>admin</title>
+	<link rel="icon" href="https://icons.veryicon.com/png/o/miscellaneous/yuanql/icon-admin.png">
+    <link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
+</head>
+<body>
+	<nav>
+		<div class="logo"><a href="#">Graafwereld Admin</a></div>
+		<ul class="menu">
+			<li><a class="order" href="../admin_pagina/index.html">orders</a></li>
+			<li><a class="machines" href="#">machines</a></li>
+		</ul>
+	</nav>
+    <a href="../machines/index.html" class="terug">Ga terug</a>
+	<h1 class="h1">Edit product </h1>
+	<form action="">
+	<label>Naam</label>
+	<input id="naam" class="input" type="text" required>
+	<label>Prijs</label>
+	<input id="prijs" class="input" type="number" step="0.01" required>
+	<label>Bouwjaar</label>
+	<input id="bouwjaar" class="input" type="text" required>
+	<label>Voertuig</label>
+	<select id="voertuig" class="input" required>
+      <option>rupskranen</option>
+      <option>mobiele kranen</option>
+      <option>shovels</option>
+    </select>
+	<label>Afbeelding</label>
+	<div class="input-met-button">
+		<input class="img" type="text" id="image-url" required>
+		<button class="button" onclick="previewImage(event)">Preview</button>
+	</div>
+	<div id="image-preview"></div>
+	<button id="voegtoe" class="voegtoe">voeg toe</button>
+</form>
+</body>
+</html>

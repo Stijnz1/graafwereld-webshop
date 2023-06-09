@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Graafwereld | Winkelwagen</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/4824/4824917.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <nav>
+    <div class="logo"><a href="../hoofdpagina/index.html">Graafwereld</a></div>
+    <ul class="menu">
+      <li><a href="../hoofdpagina/index.html">Home</a></li>
+      <li><a href="../about_us_pagina/index.html">About us</a></li>
+      <li><a href="../contact_pagina/index.html">contact</a></li>
+      <li><a><img class="prullebak" onclick="clearLocalStorage()" src="https://cdn.pixabay.com/photo/2020/02/24/07/16/dust-bin-4875414_960_720.png" alt="prullebak"></a></li>
+    </ul>
+  </nav>
+  <div class="alles">
+    <h1>Winkelwagen</h1>
+    <table id="winkelwagen-table">
+      <thead>
+        <tr>
+          <th>Machine</th>
+          <th>Prijs</th>
+        </tr>
+      </thead>
+      <tbody id="winkelwagen-body">
+      </tbody>
+    </table>
+    <h3 class="totaal" id="totaal">totaal:</h3> 
+    <button id="afrekenen" class="afrekenen" onclick="saveOrderTotal(), clearLocalStorage()">afrekenen</button>
+  </div>
+</body>
+</html>

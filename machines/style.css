@@ -1,0 +1,78 @@
+/* NAVBAR */
+nav {
+    background-color: rgb(147, 142, 142);
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  .logo a {
+    color: rgb(63, 196, 249);
+    font-size: 32px;
+    text-decoration: none;
+  } 
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding-top: 10px;
+  }
+  .menu li {
+    list-style: none;
+    margin-bottom: 10px;
+  }
+  .menu li a {
+    text-decoration: none;
+    font-size: 18px;
+  }
+  .menu li:last-child a {
+    margin-right: 40px;
+  }
+  .order {
+    color: #fff;
+  }
+  .machines {
+    background-color: rgb(63, 196, 249);
+    color: #fff;
+    padding: 9px;
+    border-radius: 6px;
+  }
+  table {
+    margin-top: 25px;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+ .plus {
+  margin-right: 50px;
+  margin-top: 20px;
+  background-color: rgb(63, 196, 249);
+  padding: 10px;
+  border-radius: 100%;
+ }
+ .buttons {
+  display: flex;
+  justify-content: space-between;
+ }
+ .reset {
+  margin-left: 50px;
+  margin-top: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+ }
+ .id {
+  font-weight: bolder;
+ }
+ .edit {
+  color: blue;
+  text-decoration: none;
+ }
+ .remove {
+  color: red;
+  cursor: pointer;
+ }

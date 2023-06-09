@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>admin | machines</title>
+    <link
+      rel="icon"
+      href="https://icons.veryicon.com/png/o/miscellaneous/yuanql/icon-admin.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <div class="logo"><a href="#">Graafwereld Admin</a></div>
+      <ul class="menu">
+        <li><a class="order" href="../orders/index.html">orders</a></li>
+        <li><a class="machines" href="#">machines</a></li>
+      </ul>
+    </nav>
+    <div class="buttons">
+      <button id="reset" class="reset">reset machines</button>
+      <a href="../voegtoe/index.html">
+        <svg height="22px" class="plus" viewBox="0 0 448 512">
+          <path
+            d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"
+          />
+        </svg>
+      </a>
+    </div>
+    <table id="winkelwagen-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Naam</th>
+          <th>Prijs</th>
+          <th>Afbeelding URL</th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="winkelwagen-body">
+        <template id="machine-template" style="display: none;">
+            <tr>
+                <td class="id"></td>
+                <td class="naam"></td>
+                <td class="prijs"></td>
+                <td class="afbeelding"></td>
+                <td class="edit"><a href="../edit/index.html" class="edit-link">edit</a></td>
+                <td class="remove remove-cell">remove</td>
+            </tr>
+        </template>
+    </tbody>
+    
+    </table>
+  </body>
+</html>
