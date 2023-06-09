@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Graafwereld</title>
+		<link
+			rel="icon"
+			href="https://cdn-icons-png.flaticon.com/512/4824/4824917.png"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js" defer></script>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+			rel="stylesheet"
+		/>
+		<style>
+			body {
+				font-family: "Montserrat", sans-serif;
+			}
+		</style>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						colors: {
+							clifford: "#da373d",
+						},
+					},
+				},
+			};
+		</script>
+	</head>
+	<body>
+		<nav class="flex justify-around items-center bg-blue-300 py-4">
+			<div class="container flex justify-between items-center">
+				<div class="text-2xl text-white font-bold">
+					<a href="/">Graafwereld</a>
+				</div>
+				<ul class="flex items-center gap-4">
+					<li class="text-white"><a href="/">Home</a></li>
+					<li class="text-white">
+						<a href="../about_us_pagina/index.html">About us</a>
+					</li>
+					<li class="text-white">
+						<a href="../contact_pagina/index.html">Contact</a>
+					</li>
+					<li class="text-white border border-white rounded p-1.5">
+						<a href="../winkelwagen/index.html"
+							><svg
+								class="h-7 w-7"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="1.5"
+								viewBox="0 0 24 24"
+								xmlns="http://www.w3.org/2000/svg"
+								aria-hidden="true"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+								></path>
+							</svg>
+							<span id="winkelwagen-aantal"></span
+						></a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="buttons">
+			<button
+				class="bg-blue-300 text-white py-1 px-2 rounded-lg"
+				id="alles"
+			>
+				Alles
+			</button>
+			<button
+				class="bg-blue-300 text-white py-1 px-2 rounded-lg"
+				id="rups"
+			>
+				Rupskranen
+			</button>
+			<button
+				class="bg-blue-300 text-white py-1 px-2 rounded-lg"
+				id="mobiel"
+			>
+				Mobiele kranen
+			</button>
+			<button
+				class="bg-blue-300 text-white py-1 px-2 rounded-lg"
+				id="shovels"
+			>
+				Shovels
+			</button>
+		</div>
+		<div
+			class="kranen container mx-auto my-20 grid grid-cols-2 md:grid-cols-3 gap-4"
+		></div>
+		<div id="modal" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<p id="modal-message"></p>
+			</div>
+		</div>
+	</body>
+</html>
