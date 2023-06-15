@@ -22,9 +22,23 @@ document.getElementById("voegtoe").addEventListener("click", function () {
 
     if (naam && prijs && bouwjaar && voertuig && foto != '') {
         let machines = JSON.parse(localStorage.getItem('machines')) || [];
-        machines.push({
-            naam: naam, foto: foto, prijs: prijs, bouwjaar: bouwjaar, voertuig: voertuig,
+        let hoogsteId = 0;
+        machines.forEach(machine => {
+            if (machine.id > hoogsteId) {
+                hoogsteId = machine.id;
+            }
         });
+
+        const newMachine = {
+            id: hoogsteId + 1,
+            naam: naam,
+            foto: foto,
+            prijs: prijs,
+            bouwjaar: bouwjaar,
+            voertuig: voertuig,
+        };
+
+        machines.push(newMachine);
         localStorage.setItem('machines', JSON.stringify(machines));
     }
 });

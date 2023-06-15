@@ -5,14 +5,25 @@
 	<link rel="icon" href="https://icons.veryicon.com/png/o/miscellaneous/yuanql/icon-admin.png">
 	<link rel="stylesheet" href="style.css">
 	<script src="script.js"></script>
+	<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+		<style>
+			body {
+				font-family: "Montserrat", sans-serif;
+			}
+		</style>
 </head>
 <body>
-	<nav>
-		<div class="logo"><a href="#">Graafwereld Admin</a></div>
-		<ul class="menu">
-			<li><a class="order" href="index.html">orders</a></li>
-			<li><a class="machines" href="../machines/index.html">machines</a></li>
+	<nav class="flex justify-around items-center bg-blue-300 py-4 px-10">
+		<div class="container flex justify-between items-center">
+		<div class="text-2xl text-white font-bold"><a>Graafwereld Admin</a></div>
+		<ul class="flex items-center gap-6">
+			<li><a class="text-white bg-blue-500 p-3 rounded-lg" href="index.html">orders</a></li>
+			<li><a class="text-white" href="../machines/index.html">machines</a></li>
 		</ul>
+	</div>
 	</nav>
 	<table id="winkelwagen-table">
 		<thead>

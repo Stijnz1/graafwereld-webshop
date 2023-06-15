@@ -1,4 +1,4 @@
-fetch("../hoofdpagina/kranen.json")
+fetch("/kranen.json")
     .then((response) => response.json())
     .then((data) => {
         const resetButton = document.getElementById('reset');

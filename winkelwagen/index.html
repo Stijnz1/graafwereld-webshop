@@ -5,19 +5,41 @@
   <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/4824/4824917.png">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+  <style>
+    body {
+      font-family: "Montserrat", sans-serif;
+    }
+  </style>
 </head>
 <body>
-  <nav>
-    <div class="logo"><a href="/">Graafwereld</a></div>
-    <ul class="menu">
-      <li><a href="/">Home</a></li>
-      <li><a href="../about_us_pagina/index.html">About us</a></li>
-      <li><a href="../contact_pagina/index.html">contact</a></li>
-      <li><a><img class="prullebak" onclick="clearLocalStorage()" src="https://cdn.pixabay.com/photo/2020/02/24/07/16/dust-bin-4875414_960_720.png" alt="prullebak"></a></li>
-    </ul>
+  <nav class="flex justify-around items-center bg-blue-300 py-4 px-10">
+    <div class="container flex justify-between items-center">
+      <div class="text-2xl text-white font-bold">
+        <a href="/">Graafwereld</a>
+      </div>
+      <ul class="flex items-center gap-6">
+        <li class="text-white"><a href="/">Home</a></li>
+        <li class="text-white">
+          <a href="../about_us_pagina/index.html">About us</a>
+        </li>
+        <li class="text-white">
+          <a href="../contact_pagina/index.html">Contact</a>
+        </li>
+        <li class="">
+          <a href="../winkelwagen/index.html">
+            <img class="prullebak h-8 w-5" onclick="clearLocalStorage()" src="https://cdn.pixabay.com/photo/2020/02/24/07/16/dust-bin-4875414_960_720.png" alt="prullebak">
+            <span id="winkelwagen-aantal"></span>
+          </a>
+        </li>
+      </ul>
+    </div>
   </nav>
   <div class="alles">
-    <h1>Winkelwagen</h1>
+    <h1 class="text-2xl mt-8 font-bold text-center">Winkelwagen</h1>
     <table id="winkelwagen-table">
       <thead>
         <tr>
@@ -28,8 +50,8 @@
       <tbody id="winkelwagen-body">
       </tbody>
     </table>
-    <h3 class="totaal" id="totaal">totaal:</h3>
-    <button id="afrekenen" class="afrekenen" onclick="saveOrderTotal(), clearLocalStorage()">afrekenen</button>
+    <h3 class="totaal mt-4 ml-2" id="totaal">totaal:</h3>
+    <button id="afrekenen" class="afrekenen bg-blue-300" onclick="saveOrderTotal(), clearLocalStorage()">afrekenen</button>
   </div>
 </body>
 </html>
