@@ -5,37 +5,48 @@
 	<link rel="icon" href="https://icons.veryicon.com/png/o/miscellaneous/yuanql/icon-admin.png">
     <link rel="stylesheet" href="style.css">
 	<script src="script.js" defer></script>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+	<style>
+		body {
+			font-family: "Montserrat", sans-serif;
+		}
+	</style>
 </head>
 <body>
-	<nav>
-		<div class="logo"><a href="#">Graafwereld Admin</a></div>
-		<ul class="menu">
-			<li><a class="order" href="../orders/index.html">orders</a></li>
-			<li><a class="machines" href="#">machines</a></li>
-		</ul>
-	</nav>
-    <a href="../machines/index.html" class="terug">Ga terug</a>
-	<h1 class="h1">Edit product </h1>
+<nav class="flex justify-around items-center bg-blue-300 py-4 px-10 mb-5">
+	<div class="container flex justify-between items-center">
+	<div class="text-2xl text-white font-bold"><a>Graafwereld Admin</a></div>
+	<ul class="flex items-center gap-6">
+		<li><a class="text-white" href="../orders/index.html">orders</a></li>
+		<li><a class="text-white bg-blue-500 p-3 rounded-lg" href="../machines/index.html">machines</a></li>
+	</ul>
+</div>
+</nav>
+    <a href="../machines/index.html" class="text-blue-300 ml-12 text-lg">Ga terug</a>
+	<h1 class="ml-12 mt-5 mb-5 text-2xl font-bold">Edit product</h1>
 	<form action="">
-	<label>Naam</label>
-	<input id="naam" class="input" type="text" required>
-	<label>Prijs</label>
-	<input id="prijs" class="input" type="number" step="0.01" required>
-	<label>Bouwjaar</label>
-	<input id="bouwjaar" class="input" type="text" required>
-	<label>Voertuig</label>
-	<select id="voertuig" class="input" required>
+	<label class="ml-12">Naam</label>
+	<input id="naam" class="rounded-lg ml-12" type="text" required>
+	<label class="mt-2 ml-12">Prijs</label>
+	<input id="prijs" class="rounded-lg ml-12" type="number" step="0.01" required>
+	<label class="mt-2 ml-12">Bouwjaar</label>
+	<input id="bouwjaar" class="rounded-lg ml-12" type="text" required>
+	<label class="mt-2 ml-12">Voertuig</label>
+	<select id="voertuig" class=" ml-12 h-8 rounded-lg" required>
       <option>rupskranen</option>
       <option>mobiele kranen</option>
       <option>shovels</option>
     </select>
-	<label>Afbeelding</label>
+	<label class="mt-2 ml-12">Afbeelding</label>
 	<div class="input-met-button">
-		<input class="img" type="text" id="image-url" required>
-		<button class="button" onclick="previewImage(event)">Preview</button>
+		<input class="img ml-12" type="text" id="image-url" required>
+		<button class="button bg-blue-400" onclick="previewImage(event)">Preview</button>
 	</div>
 	<div id="image-preview"></div>
-	<button id="voegtoe" class="voegtoe">voeg toe</button>
+	<button id="voegtoe" class="voegtoe ml-12 mt-8 bg-blue-400">voeg toe</button>
 </form>
 </body>
 </html>

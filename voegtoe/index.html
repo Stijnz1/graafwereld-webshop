@@ -16,7 +16,7 @@
 	</style>
 </head>
 <body>
-<nav class="flex justify-around items-center bg-blue-300 py-4 px-10">
+<nav class="flex justify-around items-center bg-blue-300 py-4 px-10 mb-5">
 	<div class="container flex justify-between items-center">
 	<div class="text-2xl text-white font-bold"><a>Graafwereld Admin</a></div>
 	<ul class="flex items-center gap-6">
@@ -25,28 +25,28 @@
 	</ul>
 </div>
 </nav>
-    <a href="../machines/index.html" class="terug">Ga terug</a>
-	<h1 class="h1 mt-5 mb-5">Voeg product toe</h1>
+    <a href="../machines/index.html" class="text-blue-300 ml-12 text-lg">Ga terug</a>
+	<h1 class="ml-12 mt-5 mb-5 text-2xl font-bold">Voeg product toe</h1>
 	<form action="">
-	<label>Naam</label>
-	<input id="naam" class="inputt ml-4	" type="text" required>
-	<label class="mt-2">Prijs</label>
-	<input id="prijs" class="inputt ml-4" type="number" step="0.01" required>
-	<label class="mt-2">Bouwjaar</label>
-	<input id="bouwjaar" class="inputt ml-4" type="text" required>
-	<label class="mt-2">Voertuig</label>
-	<select id="voertuig" class="inputt ml-4" required>
+	<label class="ml-12">Naam</label>
+	<input id="naam" class="rounded-lg ml-12" type="text" required>
+	<label class="mt-2 ml-12">Prijs</label>
+	<input id="prijs" class="rounded-lg ml-12" type="number" step="0.01" required>
+	<label class="mt-2 ml-12">Bouwjaar</label>
+	<input id="bouwjaar" class="rounded-lg ml-12" type="text" required>
+	<label class="mt-2 ml-12">Voertuig</label>
+	<select id="voertuig" class=" ml-12 h-8 rounded-lg" required>
       <option>rupskranen</option>
       <option>mobiele kranen</option>
       <option>shovels</option>
     </select>
-	<label class="mt-2">Afbeelding</label>
+	<label class="mt-2 ml-12">Afbeelding</label>
 	<div class="input-met-button">
-		<input class="img ml-4" type="text" id="image-url" required>
-		<button class="button" onclick="previewImage(event)">Preview</button>
+		<input class="img ml-12" type="text" id="image-url" required>
+		<button class="button bg-blue-400" onclick="previewImage(event)">Preview</button>
 	</div>
 	<div id="image-preview"></div>
-	<button id="voegtoe" class="voegtoe ml-4">voeg toe</button>
+	<button id="voegtoe" class="voegtoe ml-12 mt-8 bg-blue-400">voeg toe</button>
 </form>
 </body>
 </html>
