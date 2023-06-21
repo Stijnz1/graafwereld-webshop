@@ -11,6 +11,7 @@ function previewImage(event) {
         previewContainer.appendChild(imageElement);
     }
 }
+
 const machineId = parseInt(new URLSearchParams(window.location.search).get("id"), 20);
 const form = document.querySelector("form");
 const naamInput = document.getElementById("naam");
@@ -41,6 +42,7 @@ function loadMachineData() {
             }
         });
 }
+
 function updateMachineData(event) {
     event.preventDefault();
     const machines = JSON.parse(localStorage.getItem("machines"));

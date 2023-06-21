@@ -8,7 +8,7 @@ fetch("/kranen.json")
             if (!machineData) {
                 localStorage.setItem("machines", JSON.stringify(data));
             }
-            location.reload();
+            window.location.reload();
         });
     });
 const tableBody = document.getElementById("winkelwagen-body");

@@ -50,6 +50,6 @@ function saveOrderTotal() {
 }
 function clearLocalStorage() {
     localStorage.removeItem("shopping_cart");
-    location.reload();
+    window.location.reload();
 }
 showProduct();
