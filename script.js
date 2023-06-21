@@ -20,18 +20,10 @@ fetch("kranen.json")
             const kraanElement = kraanTemplate.content.cloneNode(true);
             kraanElement.querySelector(".kranen-voertuig").textContent = kraan.naam;
             kraanElement.querySelector(".foto").src = kraan.foto;
-            kraanElement.querySelector(
-                ".text-gray-700:nth-of-type(1)"
-            ).textContent = `bouwjaar: ${kraan.bouwjaar}`;
-            kraanElement.querySelector(
-                ".text-gray-700:nth-of-type(2)"
-            ).textContent = `prijs: €${kraan.prijs}`;
-            kraanElement
-                .querySelector(".machine")
-                .setAttribute("data-voertuig", kraan.voertuig);
-            const inWinkelwagenButton = kraanElement.querySelector(
-                ".inwinkelwagen-button"
-            );
+            kraanElement.querySelector(".text-gray-700:nth-of-type(1)").textContent = `bouwjaar: ${kraan.bouwjaar}`;
+            kraanElement.querySelector(".text-gray-700:nth-of-type(2)").textContent = `prijs: €${kraan.prijs}`;
+            kraanElement.querySelector(".machine").setAttribute("data-voertuig", kraan.voertuig);
+            const inWinkelwagenButton = kraanElement.querySelector(".inwinkelwagen-button");
             inWinkelwagenButton.setAttribute("data-naam", kraan.naam);
             inWinkelwagenButton.setAttribute("data-prijs", kraan.prijs);
             kranenContainer.appendChild(kraanElement);
