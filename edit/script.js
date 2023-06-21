@@ -22,7 +22,7 @@ const imageUrlInput = document.getElementById("image-url");
 function loadMachineData() {
     fetch("/kranen.json")
         .then((response) => response.json())
-        .then((data) => {
+        .then(() => {
             const machines = JSON.parse(localStorage.getItem("machines"));
             if (machines) {
                 const selectedMachine = machines.find((machine) => machine.id === machineId);
@@ -30,13 +30,17 @@ function loadMachineData() {
                     naamInput.value = selectedMachine.naam;
                     prijsInput.value = selectedMachine.prijs;
                     bouwjaarInput.value = selectedMachine.bouwjaar;
-                    voertuigInput.value = selectedMachine.voertuig;
+                    for (let i = 0; i < voertuigInput.options.length; i++) {
+                        if (voertuigInput.options[i].value === selectedMachine.voertuig) {
+                            voertuigInput.selectedIndex = i;
+                            break;
+                        }
+                    }
                     imageUrlInput.value = selectedMachine.foto;
                 }
             }
         });
 }
-
 function updateMachineData(event) {
     event.preventDefault();
     const machines = JSON.parse(localStorage.getItem("machines"));

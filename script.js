@@ -31,9 +31,7 @@ fetch("kranen.json")
         if (!machineData) {
             localStorage.setItem("machines", JSON.stringify(data));
         }
-        const inWinkelwagenButtons = document.querySelectorAll(
-            ".inwinkelwagen-button"
-        );
+        const inWinkelwagenButtons = document.querySelectorAll(".inwinkelwagen-button");
         inWinkelwagenButtons.forEach((button) => {
             button.addEventListener("click", (event) => {
                 const productnaam = event.target.getAttribute("data-naam");
